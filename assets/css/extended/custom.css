@@ -1,0 +1,63 @@
+/* === Substack-style layout for PaperMod === */
+
+/* Main content area */
+.main {
+  max-width: 960px !important;   /* wider than default */
+  padding: 0 2rem;               /* gentle side padding */
+  margin: 0 auto;
+}
+
+/* Individual post body */
+.post-single {
+  max-width: 820px !important;   /* Substack-like line length */
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Paragraphs — calm, readable, and human */
+.post-single p {
+  font-size: 1.1rem;
+  line-height: 1.85;
+  color: var(--content); /* uses PaperMod’s color vars for light/dark mode */
+  font-family: "Inter", "Georgia", "Segoe UI", "Roboto", sans-serif;
+  margin: 1rem 0;
+}
+
+/* Headings — slightly stronger presence */
+.post-single h2,
+.post-single h3 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Wider feel for media and blockquotes */
+.post-single img,
+.post-single blockquote {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Blockquotes — subtle Substack-style left line */
+.post-single blockquote {
+  border-left: 3px solid var(--secondary);
+  padding-left: 1rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Tweak spacing between sections */
+.post-single ul, .post-single ol {
+  margin-left: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Slightly wider layout on big monitors */
+@media (min-width: 1400px) {
+  .main {
+    max-width: 1050px !important;
+  }
+  .post-single {
+    max-width: 900px !important;
+  }
+}

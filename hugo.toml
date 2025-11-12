@@ -1,0 +1,43 @@
+baseURL = "http://localhost:1313/"
+languageCode = "en-us"
+title = "Campfire"
+theme = "PaperMod"
+
+author = "Lucky"
+
+[params]
+#  author = "Lucky"
+  description = "Thoughts, experiments, and explorations."
+  defaultTheme = "auto"  # options: light, dark, auto
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  comments = false
+  ShowPostAuthor = false 
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+
+#    [[menu.main]]
+#    identifier = "tags"
+#    name = "Tags"
+#    url = "/tags/"
+#    weight = 3
+
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 3
